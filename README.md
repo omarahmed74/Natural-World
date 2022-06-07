@@ -1,3 +1,3 @@
 # Natural-World
- JavaScript project without bootstrap
+ JavaScript project without bootstrap "One Page"
  
