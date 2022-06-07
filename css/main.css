@@ -1,0 +1,165 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body , html{
+    overflow-x: hidden;
+}
+
+.navbar{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px;
+    color: #eb3458;
+
+}
+ul{
+    list-style-type: none;
+}
+
+.nav-links{
+    display: flex;
+    align-items: center;
+}
+
+.nav-links li{
+  margin: 0px 30px;
+  cursor: pointer;
+  transition: all .5s;
+}
+.nav-links li:hover{
+    color: #34baeb;
+}
+
+.active{
+    color: white;
+    font-weight: 900;
+}
+
+.logo{
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 30px;
+}
+.logo span {
+    color: #34baeb;
+}
+
+
+
+header{
+    width: 100%;
+    height: 100vh;
+    background-image: url('../img/header-bg.png');
+    background-size: cover;
+    background-position: bottom;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+a{
+    text-decoration: none;
+}
+
+.headerAbout{
+  margin-bottom: 200px;
+  color: #eb3458;
+  text-align: center;
+}
+.headerAbout h2 {
+    font-size: 25px;
+}
+
+.headerAbout h1 {
+    font-size: 50px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.border{
+   width: 150px;
+   height: 5px;
+   background-color: #34baeb;
+   margin: 10px auto;
+   border-radius: 5px;
+}
+
+.btn{
+    background-color: #eb3458;
+    padding: 8px 15px;
+    border-radius: 30px;
+    color: white;
+    font-size: 15px;
+    transition: all .5s;
+}
+
+.btn:hover {
+    color: #34baeb;
+}
+
+.menu-btn {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    width: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+
+
+
+
+
+
+@media only screen and (max-width:850px){
+    .navbar{
+        padding: 0;
+    }
+
+    .logo{
+     position: absolute;
+     left: 30px;
+     top: 30px;
+    }
+
+    .nav-links{
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        justify-content: center;
+        background-color: #484872;
+        margin-top: -900px;
+        transition: all 1.2s;
+    }
+
+    .mobile-menu{
+        margin-top: 0px;
+        border-bottom-right-radius: 20%;
+        border-bottom-left-radius: 20%;
+    }
+    
+    .menu-btn{
+        display: block;
+        width: 27px;
+    }
+    
+    .nav-links li{
+        margin: 30px auto;
+
+    }
+    .headerAbout h1{
+        font-size: 40px;
+    }
+
+    .headerAbout h2{
+        font-size: 20px;
+    }
+}
